@@ -1,8 +1,13 @@
 using System.Text;
 using BoardGameTracker.Common.Configuration;
 using BoardGameTracker.Common.Contracts;
+using BoardGameTracker.Core.Mapping;
+using BoardGameTracker.Core.Services;
+using BoardGameTracker.Core.Services.Interfaces;
 using BoardGameTracker.Data;
 using BoardGameTracker.Data.Models;
+using BoardGameTracker.Data.Repositories;
+using BoardGameTracker.Data.Repositories.Interfaces;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
@@ -18,6 +23,16 @@ public static class ServiceCollectionExtensions
 
         services.AddScoped<ApplicationDbContext>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+        // Register AutoMapper
+        services.AddAutoMapper(typeof(MappingProfile));
+
+        // Register repositories
+        services.AddScoped<IUserRepository, UserRepository>();
+
+        // Register services
+        services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IUserService, UserService>();
     }
 
     public static void ConfigureCors(this IServiceCollection services, IConfiguration configuration)

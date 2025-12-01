@@ -1,4 +1,3 @@
-using BoardGameTracker.Common.Models;
 using BoardGameTracker.Data.Models;
 using Microsoft.AspNetCore.Identity;
 
@@ -15,5 +14,8 @@ public interface IUserRepository
     Task<bool?> IsPasswordNull(string userName);
     Task<string?> GeneratePasswordResetToken(string userName);
     Task<IdentityResult> ChangePassword(ApplicationUser user, string currentPassword, string newPassword);
-
+    Task<bool> CheckPasswordAsync(ApplicationUser user, string password);
+    Task<ApplicationUser> CreateUserAsync(ApplicationUser user, string password);
+    Task<ApplicationUser> UpdateUserAsync(ApplicationUser user);
+    Task<IEnumerable<string>> GetRolesAsync(ApplicationUser user);
 }
