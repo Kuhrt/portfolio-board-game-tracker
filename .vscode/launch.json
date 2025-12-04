@@ -5,10 +5,36 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "C#: BoardGameTracker.API Debug",
+      "name": "API Debug",
       "type": "dotnet",
       "request": "launch",
       "projectPath": "${workspaceFolder}/api/BoardGameTracker.API/BoardGameTracker.API.csproj"
+    },
+    {
+      "name": "vite-debug",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "npm run dev",
+      "localRoot": "${workspaceFolder}/web",
+      "cwd": "${workspaceFolder}/web"
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "chrome-debug",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/web",
+      "sourceMapPathOverrides": {
+        "webpack:///./web/*": "${webRoot}/*"
+      },
+      "runtimeArgs": ["--remote-debugging-port=9222"],
+      "sourceMaps": true
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Web App Debug",
+      "configurations": ["vite-debug", "chrome-debug"]
     }
   ]
 }

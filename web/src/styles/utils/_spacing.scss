@@ -1,0 +1,25 @@
+@use '../mixins' as m;
+
+@include m.generate-spacing-utilities('margin', 'm');
+@include m.generate-spacing-utilities('margin-top', 'mt');
+@include m.generate-spacing-utilities('margin-right', 'mr');
+@include m.generate-spacing-utilities('margin-bottom', 'mb');
+@include m.generate-spacing-utilities('margin-left', 'ml');
+.m-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}
+.mr-auto {
+  margin-right: auto;
+}
+
+@include m.generate-spacing-utilities('padding', 'p');
+@include m.generate-spacing-utilities('padding-top', 'pt');
+@include m.generate-spacing-utilities('padding-right', 'pr');
+@include m.generate-spacing-utilities('padding-bottom', 'pb');
+@include m.generate-spacing-utilities('padding-left', 'pl');
+
+@include m.generate-spacing-utilities('gap', 'gap');

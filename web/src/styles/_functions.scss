@@ -1,0 +1,11 @@
+@use 'variables/spacing' as *;
+
+@function space($value) {
+  @if $value == 0 {
+    @return 0;
+  } @else if $value == 'px' {
+    @return 1px;
+  } @else {
+    @return calc(#{$spacing} * #{$value});
+  }
+}
