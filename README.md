@@ -45,7 +45,8 @@ Before running this project locally, ensure you have the following installed:
 - **NPM**: [Download](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
   - Package manager
   - Latest version recommended
-- **uv**: [Install](https://docs.astral.sh/uv/getting-started/installation/)
+- **.NET Core 9.0**: [Install](https://dotnet.microsoft.com/en-us/download/dotnet/9.0)
+- **MSSQL Server**: [Install](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 - **Docker**: [Install](https://docs.docker.com/desktop/)
 
 ### Installation & Setup
