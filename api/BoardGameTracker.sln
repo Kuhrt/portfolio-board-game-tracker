@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGameTracker.API", "Boa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGameTracker.Tests", "BoardGameTracker.Tests\BoardGameTracker.Tests.csproj", "{19469D5A-F77A-4F77-8642-5F6CB98DCA43}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BoardGameTracker.Database", "BoardGameTracker.Database\BoardGameTracker.Database.sqlproj", "{0F05F579-9EAA-47DA-A94F-9BCAABFD5F0C}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BoardGameTracker.Database", "BoardGameTracker.Database\BoardGameTracker.Database.sqlproj", "{C73C569A-FCEB-44DB-B8DE-9A55EF03DD1B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGameTracker.Common", "BoardGameTracker.Common\BoardGameTracker.Common.csproj", "{5AE54D87-DA37-4530-9D17-A7011C1DAFFB}"
 EndProject
@@ -73,12 +73,12 @@ Global
 		{19469D5A-F77A-4F77-8642-5F6CB98DCA43}.Release|x64.Build.0 = Release|Any CPU
 		{19469D5A-F77A-4F77-8642-5F6CB98DCA43}.Release|x86.ActiveCfg = Release|Any CPU
 		{19469D5A-F77A-4F77-8642-5F6CB98DCA43}.Release|x86.Build.0 = Release|Any CPU
-		{0F05F579-9EAA-47DA-A94F-9BCAABFD5F0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0F05F579-9EAA-47DA-A94F-9BCAABFD5F0C}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{0F05F579-9EAA-47DA-A94F-9BCAABFD5F0C}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{0F05F579-9EAA-47DA-A94F-9BCAABFD5F0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0F05F579-9EAA-47DA-A94F-9BCAABFD5F0C}.Release|x64.ActiveCfg = Release|Any CPU
-		{0F05F579-9EAA-47DA-A94F-9BCAABFD5F0C}.Release|x86.ActiveCfg = Release|Any CPU
+		{C73C569A-FCEB-44DB-B8DE-9A55EF03DD1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C73C569A-FCEB-44DB-B8DE-9A55EF03DD1B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C73C569A-FCEB-44DB-B8DE-9A55EF03DD1B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C73C569A-FCEB-44DB-B8DE-9A55EF03DD1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C73C569A-FCEB-44DB-B8DE-9A55EF03DD1B}.Release|x64.ActiveCfg = Release|Any CPU
+		{C73C569A-FCEB-44DB-B8DE-9A55EF03DD1B}.Release|x86.ActiveCfg = Release|Any CPU
 		{5AE54D87-DA37-4530-9D17-A7011C1DAFFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5AE54D87-DA37-4530-9D17-A7011C1DAFFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AE54D87-DA37-4530-9D17-A7011C1DAFFB}.Debug|x64.ActiveCfg = Debug|Any CPU

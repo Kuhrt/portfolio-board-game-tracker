@@ -5,5 +5,23 @@
     <Name>BoardGameTracker.Database</Name>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <ModelCollation>1033, CI</ModelCollation>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <RootNamespace>BoardGameTracker.Database</RootNamespace>
+    <ProjectGuid>{c73c569a-fceb-44db-b8de-9a55ef03dd1b}</ProjectGuid>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="Local.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Scripts\PostDeployment\ReferenceData\_ReferenceData.sql" />
+    <None Include="Scripts\PostDeployment\SeedData\_SeedData.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\PostDeployment\_PostDeploymentData.sql" />
+  </ItemGroup>
 </Project>

@@ -1,0 +1,15 @@
+@use 'functions' as funcs;
+
+@mixin generate-spacing-utilities($property, $prefix) {
+  @for $i from 0 through 16 {
+    .#{$prefix}-#{$i} {
+      #{$property}: funcs.space($i);
+    }
+  }
+  .#{$prefix}-px {
+    #{$property}: funcs.space('px');
+  }
+  .#{$prefix}-0-5 {
+    #{$property}: funcs.space(0.5);
+  }
+}
