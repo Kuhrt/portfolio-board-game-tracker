@@ -26,7 +26,6 @@ This project showcases the following technical skills and concepts:
 - **Vite/Vue Web App (Typescript)**: I went for an extremely lightweight SPA. I wanted to show off building a web application from scratch with these technologies
 - **MSSQL**: Database-first approach with scripts for reference data and seeding any other data. The data layer interacts with the db via a unit of work and the repository pattern.
 - **.NET Identity (auth)**: Open-source, easy to use, and production ready. Custom auth models, claims and JWT flow
-- **Tanstack**: The project uses Tanstack's query and data tables. I love the state management Tanstack provides. It's hard to beat in my mind.
 - **Vitest**: Newer testing framework with a more modern approach than Jest
 - **Docker**: The `.tools` contains a compose file to run the project locally. I also have versions of this for the live demo.
 
